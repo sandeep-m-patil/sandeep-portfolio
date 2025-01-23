@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-[#0a192f] text-gray-300 p-1">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-[#0a192f]/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-xl md:text-2xl font-bold">
+                    <span class="text-[#64ffda]">&lt;</span>
+                    <span class="text-gray-300"> Sandeep's Portfolio</span>
+                    <span class="text-[#64ffda]">/&gt;</span>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-gray-300 hover:text-[#64ffda]" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path>
+                    </svg>
+                </button>
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-300 hover:text-[#64ffda] transition-colors duration-300">
+                        <span class="text-[#64ffda]"></span> Home
+                    </a>
+                    <a href="#about" class="text-gray-300 hover:text-[#64ffda] transition-colors duration-300">
+                        <span class="text-[#64ffda]"></span> About
+                    </a>
+                    <a href="#projects" class="text-gray-300 hover:text-[#64ffda] transition-colors duration-300">
+                        <span class="text-[#64ffda]"></span> Projects
+                    </a>
+                    <a href="#contact" class="text-gray-300 hover:text-[#64ffda] transition-colors duration-300">
+                        <span class="text-[#64ffda]"></span> Contact
+                    </a>
+                </div>
+            </div>
+            <!-- Mobile Navigation Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#home" class="block px-3 py-2 text-gray-300 hover:text-[#64ffda] transition-colors duration-300">
+                        <span class="text-[#64ffda]">01.</span> Home
+                    </a>
+                    <a href="#about" class="block px-3 py-2 text-gray-300 hover:text-[#64ffda] transition-colors duration-300">
+                        <span class="text-[#64ffda]">02.</span> About
+                    </a>
+                    <a href="#projects" class="block px-3 py-2 text-gray-300 hover:text-[#64ffda] transition-colors duration-300">
+                        <span class="text-[#64ffda]">03.</span> Projects
+                    </a>
+                    <a href="#contact" class="block px-3 py-2 text-gray-300 hover:text-[#64ffda] transition-colors duration-300">
+                        <span class="text-[#64ffda]">04.</span> Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="space-y-5" data-aos="fade-up">
+                <p class="text-[#64ffda]">Hi, my name is</p>
+                <h1 class="text-5xl md:text-7xl font-bold text-gray-200">
+                   Sandeep Madhavrao Patil.
+                </h1>
+                <h2 class="text-4xl md:text-6xl font-bold text-gray-400">
+                    I build things for the web.
+                </h2>
+                <p class="max-w-xl text-gray-400 text-lg">
+                    As a second-year BTech student in Computer Science Engineering (AI & ML) at ACE Engineering College, Ghatkesar, I'm deeply passionate about pushing the boundaries of technology through AI, Machine Learning, and Deep Learning.
+
+                    I'm actively seeking connections with fellow tech enthusiasts and professionals to collaborate on cutting-edge projects and create meaningful impact – let's build something extraordinary together! 🚀           </p>
+                <div class="flex space-x-4">
+                    <a href="#projects" 
+                       class="border border-[#64ffda] text-[#64ffda] px-6 py-3 rounded hover:bg-[#64ffda]/10 transition duration-300">
+                        Check out my work!
+                    </a>
+                    <a href="#contact" 
+                       class="bg-[#64ffda] text-[#0a192f] px-6 py-3 rounded hover:bg-[#64ffda]/90 transition duration-300">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-16 flex items-center" data-aos="fade-right">
+                <span class="text-[#64ffda] mr-2"></span>
+                <span class="text-gray-200">About Me</span>
+                <div class="h-[1px] bg-gray-700 flex-grow ml-4"></div>
+            </h2>
+            
+            <!-- Main Content Container - Centered -->
+            <div class="min-h-screen flex items-center justify-center" >
+                <div class="relative group w-full max-w-4xl p-3 md:p-6" data-aos="fade-up">
+                    <!-- Main Content Container -->
+                    <div class="relative z-10 bg-[#112240] rounded-lg p-5 md:p-10 border border-[#64ffda]/20">
+                        <!-- Title Section -->
+                        <h2 class="text-lg md:text-xl font-semibold mb-4 flex items-center gap-2 text-[#64ffda]">
+                            <span class="text-xl md:text-2xl">👨‍💻</span> About Me
+                        </h2>
+
+                        <!-- Role Tags -->
+                        <div class="flex flex-wrap gap-2 md:gap-3 mb-4 md:mb-6">
+                            <span class="bg-[#64ffda]/10 text-[#64ffda] px-2 md:px-3 py-1 rounded-full text-xs md:text-sm">
+                                CSE (AI & ML) Student
+                            </span>
+                            <span class="bg-[#64ffda]/10 text-[#64ffda] px-2 md:px-3 py-1 rounded-full text-xs md:text-sm">
+                                Front-End Developer
+                            </span>
+                            <span class="bg-[#64ffda]/10 text-[#64ffda] px-2 md:px-3 py-1 rounded-full text-xs md:text-sm">
+                                NPTEL Certified C Programmer
+                            </span>
+                        </div>
+
+                        <!-- Main Text -->
+                        <div class="space-y-3 md:space-y-4 text-gray-300 text-sm md:text-base">
+                            <p class="leading-relaxed">
+                                Currently pursuing my 2nd Year B.Tech in CSE (AI & ML) at 
+                                <span class="text-[#64ffda]">ACE ENGINEERING COLLEGE, Ghatkesar</span>.
+                            </p>
+                            
+                            <p class="leading-relaxed">
+                                As a CSM student, I'm driven by my passion for exploring technology and solving real-life problems.
+                            </p>
+
+                            <!-- Skills Section -->
+                            <div class="mt-6 md:mt-8">
+                                <h3 class="text-[#64ffda] mb-3 md:mb-4">Technical Skills:</h3>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                                    <!-- Programming Languages -->
+                                    <div class="space-y-2">
+                                        <h4 class="text-gray-200 font-medium">Languages</h4>
+                                        <div class="space-y-1">
+                                            <div class="flex items-center gap-2">
+                                                <span class="text-[#64ffda]">▹</span>
+                                                <span>Python</span>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <span class="text-[#64ffda]">▹</span>
+                                                <span>C/C++</span>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <span class="text-[#64ffda]">▹</span>
+                                                <span>JavaScript</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Frameworks & Libraries -->
+                                    <div class="space-y-2">
+                                        <h4 class="text-gray-200 font-medium">Frameworks</h4>
+                                        <div class="space-y-1">
+                                            <div class="flex items-center gap-2">
+                                                <span class="text-[#64ffda]">▹</span>
+                                                <span>React.js</span>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <span class="text-[#64ffda]">▹</span>
+                                                <span>Node.js</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Tools & Technologies -->
+                                    <div class="space-y-2">
+                                        <h4 class="text-gray-200 font-medium">Tools</h4>
+                                        <div class="space-y-1">
+                                            <div class="flex items-center gap-2">
+                                                <span class="text-[#64ffda]">▹</span>
+                                                <span>Git Hub</span>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <span class="text-[#64ffda]">▹</span>
+                                                <span>VS Code</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Areas of Interest -->
+                            <div class="mt-6 md:mt-8">
+                                <h3 class="text-[#64ffda] mb-2 md:mb-3">Areas of Interest:</h3>
+                                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                                    <li class="flex items-center gap-2">
+                                        <span class="text-[#64ffda]">▹</span>
+                                        Artificial Intelligence & ML
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <span class="text-[#64ffda]">▹</span>
+                                        Programming
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <span class="text-[#64ffda]">▹</span>
+                                        Data Structures & Algorithms
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <span class="text-[#64ffda]">▹</span>
+                                        Problem Solving
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Decorative Border -->
+                    <div class="absolute inset-0 border-2 border-[#64ffda]/20 rounded-lg 
+                                transform translate-x-2 translate-y-2 md:translate-x-4 md:translate-y-4 -z-10 
+                                group-hover:translate-x-1 group-hover:translate-y-1 
+                                md:group-hover:translate-x-2 md:group-hover:translate-y-2 
+                                transition-all duration-300 ease-in-out">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-16 flex items-center" data-aos="fade-right">
+                <span class="text-[#64ffda] mr-2"></span>
+                <span class="text-gray-200">Featured Projects</span>
+                <div class="h-[1px] bg-gray-700 flex-grow ml-4"></div>
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-[#112240] rounded-lg p-6 hover:transform hover:-translate-y-2 transition duration-300" 
+                     data-aos="fade-up">
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="text-[#64ffda]">
+                            <i class="far fa-folder text-4xl"></i>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/sandeep-m-patil/newsapp.v2.0" target="_blank" class="text-gray-400 hover:text-[#64ffda]">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                            <a href="https://sandeep-m-patil.github.io/newsapp.v2.0/" target="_blank" class="text-gray-400 hover:text-[#64ffda]">
+                                <i class="fas fa-external-link-alt text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-200 mb-2">NEWS Application Jun 2024</h3>
+                    <p class="text-gray-400 mb-4">
+                        An Frontend website which uses Google Sheets (converted to API) as DB and fetches the news .   </p>
+                    <div class="flex flex-wrap gap-2 text-sm text-gray-400">
+                        <span>Html</span>
+                        <span>Bootstrap</span>
+                        <span>Java Script</span>
+                        <span>Google Sheets</span>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-[#112240] rounded-lg p-6 hover:transform hover:-translate-y-2 transition duration-300" 
+                     data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="text-[#64ffda]">
+                            <i class="far fa-folder text-4xl"></i>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/sandeep-m-patil/aceec" target="_blank" class="text-gray-400 hover:text-[#64ffda]">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                            <a href="https://sandeep-m-patil.github.io/aceec/" target="_blank" class="text-gray-400 hover:text-[#64ffda]">
+                                <i class="fas fa-external-link-alt text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-200 mb-2">ACE College Website clone</h3>
+                    <p class="text-gray-400 mb-4">
+                        An frontend static, responsive website made by using pure HTML and CSS .
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-sm text-gray-400">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="bg-[#112240] rounded-lg p-6 hover:transform hover:-translate-y-2 transition duration-300" 
+                     data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="text-[#64ffda]">
+                            <i class="far fa-folder text-4xl"></i>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/sandeep-m-patil/cart-application" target="_blank" class="text-gray-400 hover:text-[#64ffda]">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                            <a href="https://sandeep-m-patil.github.io/cart-application/index.html" target="_blank" class="text-gray-400 hover:text-[#64ffda]">
+                                <i class="fas fa-external-link-alt text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-200 mb-2">
+                        FlipZon</h3>
+                    <p class="text-gray-400 mb-4">
+                        An Online Shopping Application made using pure HTML , CSS and JS with proper Validation .
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-sm text-gray-400">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <h2 class="text-[#64ffda] text-lg mb-4" data-aos="fade-up">What's Next?</h2>
+            <h3 class="text-4xl md:text-5xl font-bold text-gray-200 mb-6" data-aos="fade-up" data-aos-delay="100">
+                Get In Touch
+            </h3>
+            <p class="text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">
+                I'm currently looking for internship opportunities in software development. 
+                Whether you have a question or just want to say hi, I'll get back to you!
+            </p>
+            <a href="mailto:sandeeppatil10705@gamil.com" 
+               class="inline-block border border-[#64ffda] text-[#64ffda] px-8 py-4 rounded hover:bg-[#64ffda]/10 transition duration-300"
+               data-aos="fade-up" data-aos-delay="300" target="_blank">
+                Say Hello
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center text-gray-400">
+        <div class="flex justify-center space-x-6 mb-4">
+            <a href="https://github.com/sandeep-m-patil" target="_blank" class="hover:text-[#64ffda] transition-colors duration-300">
+                <i class="fab fa-github text-xl"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/psandeep2005/" target="_blank" class="hover:text-[#64ffda] transition-colors duration-300">
+                <i class="fab fa-linkedin text-xl"></i>
+            </a>
+            
+        </div>
+        <p class="text-sm">Built with ❤️ by Sandeep Patil</p>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('#mobile-menu') && !e.target.closest('#mobile-menu-button')) {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
+
